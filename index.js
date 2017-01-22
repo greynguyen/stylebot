@@ -93,6 +93,7 @@ function handleSessionEndRequest(callback) {
   */
 function getQuestionIntent(intent, session, callback) {
     const colorGivenSlot = intent.slots.Color;
+    const clothesGivenSlot = intent.slots.Clothes;
     const clothes2GivenSlot = intent.slots.Clothes_two;
     const cardTitle = intent.name;
     let sessionAttributes = {};
@@ -100,11 +101,12 @@ function getQuestionIntent(intent, session, callback) {
     let speechOutput = '';
     const repromptText = '';
 
-    if (colorGivenSlot) {
+    if (colorGivenSlot && clothes2GivenSlot && clothesGivenSlot) {
       const colorGiven = colorGivenSlot.value;
+      const clothesGiven = clothesGivenSlot.value;
       const clothes2Given = clothes2GivenSlot.value;
 
-      speechOutput = `blue jeans go best with ${colorGiven} ${clothes2Given}`;
+      speechOutput = `blue ${clothesGiven} go best with ${colorGiven} ${clothes2Given}`;
     }
 
     callback(sessionAttributes,
