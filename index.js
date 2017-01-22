@@ -10,6 +10,23 @@
 */
 
 
+// --------------- JSON Tree -----------------------
+
+var choicesJSON = `{
+  "shirt": {
+    "blue": {
+      "pants": [
+        "blue",
+        "red"
+      ],
+      "skirt": [
+        "blue",
+        "red"
+      ]
+    }
+  }
+}`;
+
 // --------------- Helpers that build all of the responses -----------------------
 
 function buildSpeechletResponse(title, output, repromptText, shouldEndSession) {
@@ -101,12 +118,18 @@ function getQuestionIntent(intent, session, callback) {
     let speechOutput = '';
     const repromptText = '';
 
-    if (colorGivenSlot && clothes2GivenSlot && clothesGivenSlot) {
+    // check if color actually exists
+    try {
       const colorGiven = colorGivenSlot.value;
       const clothesGiven = clothesGivenSlot.value;
       const clothes2Given = clothes2GivenSlot.value;
 
-      speechOutput = `blue ${clothesGiven} go best with ${colorGiven} ${clothes2Given}`;
+      var parsingJSON = JSON.parse(choicesJSON)
+      let colorMatched = parsingJSON[clothesGiven][colorGiven][clothes2Given][1];
+
+      speechOutput = `${colorMatched} ${clothesGiven} goes best with ${colorGiven} ${clothes2Given}`;
+    } catch (err) {
+      speechOutput = `Sorry, I currently do not know that color and clothing item combination. Please try another one`;
     }
 
     callback(sessionAttributes,
@@ -127,7 +150,6 @@ function onSessionStarted(sessionStartedRequest, session) {
 */
 function onLaunch(launchRequest, session, callback) {
   console.log(`onLaunch requestId=${launchRequest.requestId}, sessionId=${session.sessionId}`);
-
   // Dispatch to your skill's launch.
   getWelcomeResponse(callback);
 }
