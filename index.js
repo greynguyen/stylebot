@@ -88,18 +88,6 @@ function handleSessionEndRequest(callback) {
     callback({}, buildSpeechletResponse(cardTitle, speechOutput, null, shouldEndSession));
   }
 
-  function createColorGivenAttributes(colorGiven) {
-    return {
-      colorGiven,
-    };
-}
-
-function createClothes2GivenAttributes(clothes2Given) {
-  return {
-    clothes2Given,
-  };
-}
-
   /**
   * Sets the color in the session and prepares the speech to reply to the user.
   */
@@ -115,8 +103,7 @@ function getQuestionIntent(intent, session, callback) {
     if (colorGivenSlot) {
       const colorGiven = colorGivenSlot.value;
       const clothes2Given = clothes2GivenSlot.value;
-      // sessionAttributes = createColorGivenAttributes(colorGiven);
-      // sessionAttributes = createClothes2GivenAttributes(clothes2Given);
+
       speechOutput = `blue jeans go best with ${colorGiven} ${clothes2Given}`;
     }
 
