@@ -41,7 +41,7 @@ function buildResponse(sessionAttributes, speechletResponse) {
   };
 }
 
-function buildMusicResponses(title, output, repromptText, shouldEndSession) {
+function buildSSMLResponses(title, output, repromptText, shouldEndSession) {
   return {
     outputSpeech: {
       type: 'SSML',
@@ -68,11 +68,13 @@ function getWelcomeResponse(callback) {
   // If we wanted to initialize the session to have some attributes we could add those here.
   const sessionAttributes = {};
   const cardTitle = 'Welcome';
-  const speechOutput = 'Welcome to Mobot. ' +
-  'You can ask me about your current emotion.';
+  const speechOutput = 'Welcome to stylebot. ' +
+  'You can ask me which colors pair well together for an outfit. ' +
+  'For example, ask what color shirt goes well with blue jeans';
   // If the user either does not reply to the welcome message or says something that is not
   // understood, they will be prompted again with this text.
-  const repromptText = 'You can ask me about your current emotion.';
+  const repromptText = 'You can ask me which colors pair well together for an outfit. ' +
+   'For example, ask what color shirt goes well with blue jeans';
   const shouldEndSession = false;
 
   callback(sessionAttributes,
@@ -81,7 +83,7 @@ function getWelcomeResponse(callback) {
 
 function handleSessionEndRequest(callback) {
     const cardTitle = 'Session Ended';
-    const speechOutput = 'Mobot is always here for you. Have a nice day!';
+    const speechOutput = 'Hope to see you soon! Goodbye!';
     // Setting this to true ends the session and exits the skill.
     const shouldEndSession = true;
 
@@ -97,7 +99,7 @@ function handleSessionEndRequest(callback) {
   /**
   * Sets the color in the session and prepares the speech to reply to the user.
   */
-function getEmotion(intent, session, callback) {
+function getQuestionIntent(intent, session, callback) {
     const cardTitle = intent.name;
     let repromptText = '';
     let sessionAttributes = {};
@@ -123,7 +125,7 @@ function playMusic(intent, session, callback) {
   // If the user does not respond or says something that is not understood, the session
   // will end.
   callback(sessionAttributes,
-    buildMusicResponses(intent.name, speechOutput, repromptText, shouldEndSession));
+    buildSSMLResponses(intent.name, speechOutput, repromptText, shouldEndSession));
 }
 
 // --------------- Events -----------------------
@@ -155,11 +157,11 @@ function onIntent(intentRequest, session, callback) {
   const intentName = intentRequest.intent.name;
 
   // Dispatch to your skill's intent handlers
-  if (intentName === 'WhatsMyEmotion') {
-    getEmotion(intent, session, callback);
+  if (intentName === 'WhatColorMatch') {
+    getQuestionIntent(intent, session, callback);
   } else if (intentName === 'MyEmotionIntent') {
     playMusic(intent, session, callback);
-  } else if (intentName === 'EndEmotionIntent') {
+  } else if (intentName === 'EndColorIntent') {
     handleSessionEndRequest(callback);
   } else if (intentName === 'AMAZON.HelpIntent') {
     getWelcomeResponse(callback);
