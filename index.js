@@ -68,9 +68,7 @@ function getWelcomeResponse(callback) {
   // If we wanted to initialize the session to have some attributes we could add those here.
   const sessionAttributes = {};
   const cardTitle = 'Welcome';
-  const speechOutput = 'Welcome to stylebot. ' +
-  'You can ask me which colors pair well together for an outfit. ' +
-  'For example, ask what color shirt goes well with blue jeans';
+  const speechOutput = 'Welcome to stylebot. ';
   // If the user either does not reply to the welcome message or says something that is not
   // understood, they will be prompted again with this text.
   const repromptText = 'You can ask me which colors pair well together for an outfit. ' +
@@ -90,42 +88,40 @@ function handleSessionEndRequest(callback) {
     callback({}, buildSpeechletResponse(cardTitle, speechOutput, null, shouldEndSession));
   }
 
-  function createFavoriteColorAttributes(favoriteColor) {
+  function createColorGivenAttributes(colorGiven) {
     return {
-      favoriteColor,
+      colorGiven,
     };
+}
+
+function createClothes2GivenAttributes(clothes2Given) {
+  return {
+    clothes2Given,
+  };
 }
 
   /**
   * Sets the color in the session and prepares the speech to reply to the user.
   */
 function getQuestionIntent(intent, session, callback) {
+    const colorGivenSlot = intent.slots.Color;
+    const clothes2GivenSlot = intent.slots.Clothes_two;
     const cardTitle = intent.name;
-    let repromptText = '';
     let sessionAttributes = {};
-    const shouldEndSession = false;
+    const shouldEndSession = true;
     let speechOutput = '';
+    const repromptText = '';
 
-    speechOutput = "You are currently feeling sad. Would you like me to play you a happy song?";
-    repromptText = "You are feeling sad. Would you like me to play a song?";
+    if (colorGivenSlot) {
+      const colorGiven = colorGivenSlot.value;
+      const clothes2Given = clothes2GivenSlot.value;
+      // sessionAttributes = createColorGivenAttributes(colorGiven);
+      // sessionAttributes = createClothes2GivenAttributes(clothes2Given);
+      speechOutput = `blue jeans go best with ${colorGiven} ${clothes2Given}`;
+    }
 
     callback(sessionAttributes,
       buildSpeechletResponse(cardTitle, speechOutput, repromptText, shouldEndSession));
-}
-
-function playMusic(intent, session, callback) {
-  const repromptText = null;
-  const sessionAttributes = {};
-  let shouldEndSession = true;
-  let speechOutput = '';
-
-  speechOutput = "<speak><audio src='https://s3.amazonaws.com/mobot-alexei/output.mp3'/></speak>";
-
-  // Setting repromptText to null signifies that we do not want to reprompt the user.
-  // If the user does not respond or says something that is not understood, the session
-  // will end.
-  callback(sessionAttributes,
-    buildSSMLResponses(intent.name, speechOutput, repromptText, shouldEndSession));
 }
 
 // --------------- Events -----------------------
@@ -159,8 +155,6 @@ function onIntent(intentRequest, session, callback) {
   // Dispatch to your skill's intent handlers
   if (intentName === 'WhatColorMatch') {
     getQuestionIntent(intent, session, callback);
-  } else if (intentName === 'MyEmotionIntent') {
-    playMusic(intent, session, callback);
   } else if (intentName === 'EndColorIntent') {
     handleSessionEndRequest(callback);
   } else if (intentName === 'AMAZON.HelpIntent') {
