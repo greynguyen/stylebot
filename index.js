@@ -16,12 +16,76 @@ var choicesJSON = `{
   "shirt": {
     "blue": {
       "pants": [
-        "blue",
+        "white",
+        "gray",
+        "yellow",
+        "light green"
+      ],
+      "shoes": [
+        "brown",
+        "white"
+      ],
+      "jeans": [
+        "white",
+        "gray",
+        "olive green",
+        "black",
+        "brown"
+      ],
+      "jacket": [
+        "light blue",
+        "navy blue",
+        "white",
+        "gray",
+        "dark green"
+      ],
+      "coat": [
+        "light blue",
+        "navy blue",
+        "white",
+        "gray",
+        "dark green"
+      ]
+    },
+    "green": {
+      "pants": [
+        "white",
+        "gray",
+        "navy blue"
+      ],
+      "shoes": [
+        "white",
+        "light blue"
+      ],
+      "jacket": [
+        "white",
+        "gray",
+        "light blue"
+      ],
+      "coat": [
+        "white",
+        "gray",
+        "light blue"
+      ]
+    },
+    "red": {
+      "pants": [
+        "gray",
+        "white",
+        "light blue"
+      ],
+      "shoes": [
+        "black",
+        "white",
         "red"
       ],
-      "skirt": [
-        "blue",
-        "red"
+      "jacket": [
+        "white",
+        "black"
+      ],
+      "coat": [
+        "white",
+        "black"
       ]
     }
   }
@@ -124,10 +188,14 @@ function getQuestionIntent(intent, session, callback) {
       const clothesGiven = clothesGivenSlot.value;
       const clothes2Given = clothes2GivenSlot.value;
 
-      var parsingJSON = JSON.parse(choicesJSON)
+      var parsingJSON = JSON.parse(choicesJSON);
       let colorMatched = parsingJSON[clothesGiven][colorGiven][clothes2Given][1];
 
-      speechOutput = `${colorMatched} ${clothesGiven} goes best with ${colorGiven} ${clothes2Given}`;
+      if (clothesGiven === 'jeans' | clothesGiven === 'shoes' | clothesGiven === 'pants') {
+        speechOutput = `A pair of ${colorMatched} ${clothesGiven} goes best with ${colorGiven} ${clothes2Given}`;
+      } else {
+        speechOutput = `A ${colorMatched} ${clothesGiven} goes best with ${colorGiven} ${clothes2Given}`;
+      }
     } catch (err) {
       speechOutput = `Sorry, I currently do not know that color and clothing item combination. Please try another one`;
     }
