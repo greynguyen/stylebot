@@ -73,6 +73,1916 @@
         "white",
         "black"
       ]
+    },
+    "navy": {
+      "pants": [
+        "gray",
+        "white",
+        "light blue"
+      ],
+      "shoes": [
+        "brown",
+        "white",
+        "black"
+      ],
+      "jacket": [
+        "white",
+        "light blue",
+        "light pink"
+      ],
+      "coat": [
+        "white",
+        "light blue"
+      ]
+    },
+    "orange": {
+      "pants": [
+        "navy blue",
+        "white"
+      ],
+      "shoes": [
+        "light blue",
+        "white",
+        "brown"
+      ],
+      "jacket": [
+        "white"
+      ],
+      "coat": [
+        "navy blue",
+        "white"
+      ]
+    },
+    "yellow": {
+      "pants": [
+        "gray",
+        "white",
+        "light blue"
+      ],
+      "shoes": [
+        "white",
+        "light blue"
+      ],
+      "jacket": [
+        "white"
+      ],
+      "coat": [
+        "white"
+      ]
+    },
+    "black": {
+      "pants": [
+        "white",
+        "blue"
+      ],
+      "shoes": [
+        "white",
+        "red",
+        "green"
+      ],
+      "jacket": [
+        "white",
+        "blue",
+        "gray"
+      ],
+      "coat": [
+        "white",
+        "black"
+      ],
+      "jeans": [
+        "olive green",
+        "white",
+        "blue"
+      ]
+    },
+    "gray": {
+      "pants": [
+        "navy blue",
+        "white",
+        "light blue",
+        "light pink"
+      ],
+      "jeans": [
+        "navy blue",
+        "white",
+        "light blue",
+        "light pink"
+      ],
+      "shoes": [
+        "white",
+        "gray",
+        "blue"
+      ],
+      "jacket": [
+        "white",
+        "light blue"
+      ],
+      "coat": [
+        "white",
+        "black",
+        "navy blue"
+      ]
+    },
+    "purple": {
+      "pants": [
+        "white",
+        "navy blue"
+      ],
+      "jeans": [
+        "white",
+        "navy blue"
+      ],
+      "shoes": [
+        "white"
+      ],
+      "jacket": [
+        "white",
+        "navy blue"
+      ],
+      "coat": [
+        "navy blue",
+        "white"
+      ]
+    },
+    "white": {
+      "pants": [
+        "blue",
+        "gray",
+        "pink"
+      ],
+      "jeans": [
+        "blue",
+        "gray",
+        "pink"
+      ],
+      "shoes": [
+        "black",
+        "white"
+      ],
+      "jacket": [
+        "black",
+        "blue"
+      ],
+      "coat": [
+        "black",
+        "blue"
+      ]
+    },
+    "brown": {
+      "pants": [
+        "navy blue",
+        "white"
+      ],
+      "jeans": [
+        "navy blue",
+        "white"
+      ],
+      "shoes": [
+        "navy blue",
+        "white"
+      ],
+      "jacket": [
+        "white",
+        "gray",
+        "navy blue"
+      ],
+      "coat": [
+        "white",
+        "gray",
+        "navy blue"
+      ]
+    },
+    "pink": {
+      "pants": [
+        "light blue",
+        "white"
+      ],
+      "shoes": [
+        "white",
+        "white"
+      ],
+      "jacket": [
+        "white",
+        "light blue"
+      ],
+      "coat": [
+        "white",
+        "light blue"
+      ]
+    }
+  },
+  "jeans": {
+    "blue": {
+      "shoes": [
+        "blue"
+      ],
+      "jacket": [
+        "blue",
+        "black"
+      ],
+      "coat": [
+        "black",
+        "blue"
+      ],
+      "shirt": [
+        "blue"
+      ],
+      "sweater": [
+        "blue"
+      ],
+      "hoodie": [
+        "blue"
+      ]
+    },
+    "green": {
+      "shoes": [
+        "gray",
+        "blue"
+      ],
+      "jacket": [
+        "blue"
+      ],
+      "coat": [
+        "dark blue"
+      ],
+      "shirt": [
+        "light blue",
+        "dark blue"
+      ],
+      "sweater": [
+        "light blue",
+        "dark blue"
+      ],
+      "hoodie": [
+        "light blue",
+        "dark blue"
+      ]
+    },
+    "red": {
+      "shoes": [
+        "blue"
+      ],
+      "jacket": [
+        "blue",
+        "black"
+      ],
+      "coat": [
+        "black",
+        "blue"
+      ],
+      "shirt": [
+        "blue"
+      ],
+      "sweater": [
+        "blue"
+      ],
+      "hoodie": [
+        "blue"
+      ]
+    },
+    "navy": {
+      "shoes": [
+        "blue"
+      ],
+      "jacket": [
+        "blue",
+        "black"
+      ],
+      "coat": [
+        "black",
+        "blue"
+      ],
+      "shirt": [
+        "blue"
+      ],
+      "sweater": [
+        "blue"
+      ],
+      "hoodie": [
+        "blue"
+      ]
+    },
+    "orange": {
+      "shoes": [
+        "blue"
+      ],
+      "jacket": [
+        "blue",
+        "black"
+      ],
+      "coat": [
+        "black",
+        "blue"
+      ],
+      "shirt": [
+        "blue"
+      ],
+      "sweater": [
+        "blue"
+      ],
+      "hoodie": [
+        "blue"
+      ]
+    },
+    "yellow": {
+      "shoes": [
+        "blue"
+      ],
+      "jacket": [
+        "blue",
+        "black"
+      ],
+      "coat": [
+        "black",
+        "blue"
+      ],
+      "shirt": [
+        "blue"
+      ],
+      "sweater": [
+        "blue"
+      ],
+      "hoodie": [
+        "blue"
+      ]
+    },
+    "black": {
+      "shoes": [
+        "blue"
+      ],
+      "jacket": [
+        "blue",
+        "black"
+      ],
+      "coat": [
+        "black",
+        "blue"
+      ],
+      "shirt": [
+        "blue"
+      ],
+      "sweater": [
+        "blue"
+      ],
+      "hoodie": [
+        "blue"
+      ]
+    },
+    "gray": {
+      "shoes": [
+        "blue"
+      ],
+      "jacket": [
+        "blue",
+        "black"
+      ],
+      "coat": [
+        "black",
+        "blue"
+      ],
+      "shirt": [
+        "blue"
+      ],
+      "sweater": [
+        "blue"
+      ],
+      "hoodie": [
+        "blue"
+      ]
+    },
+    "purple": {
+      "shoes": [
+        "blue"
+      ],
+      "jacket": [
+        "blue",
+        "black"
+      ],
+      "coat": [
+        "black",
+        "blue"
+      ],
+      "shirt": [
+        "blue"
+      ],
+      "sweater": [
+        "blue"
+      ],
+      "hoodie": [
+        "blue"
+      ]
+    },
+    "white": {
+      "shoes": [
+        "blue"
+      ],
+      "jacket": [
+        "blue",
+        "black"
+      ],
+      "coat": [
+        "black",
+        "blue"
+      ],
+      "shirt": [
+        "blue"
+      ],
+      "sweater": [
+        "blue"
+      ],
+      "hoodie": [
+        "blue"
+      ]
+    },
+    "brown": {
+      "shoes": [
+        "blue"
+      ],
+      "jacket": [
+        "blue",
+        "black"
+      ],
+      "coat": [
+        "black",
+        "blue"
+      ],
+      "shirt": [
+        "blue"
+      ],
+      "sweater": [
+        "blue"
+      ],
+      "hoodie": [
+        "blue"
+      ]
+    },
+    "pink": {
+      "shoes": [
+        "blue"
+      ],
+      "jacket": [
+        "blue",
+        "black"
+      ],
+      "coat": [
+        "black",
+        "blue"
+      ],
+      "shirt": [
+        "blue"
+      ],
+      "sweater": [
+        "blue"
+      ],
+      "hoodie": [
+        "blue"
+      ]
+    }
+  },
+  "pants": {
+    "blue": {
+      "shoes": [
+        "blue",
+        "gray"
+      ],
+      "jacket": [
+        "khaki",
+        "gray"
+      ],
+      "coat": [
+        "khaki",
+        "gray"
+      ],
+      "shirt": [
+        "khaki",
+        "white",
+        "gray"
+      ],
+      "sweater": [
+        "blue",
+        "gray",
+        "khaki"
+      ],
+      "hoodie": [
+        "blue",
+        "gray",
+        "khaki"
+      ]
+    },
+    "green": {
+      "shoes": [
+        "gray",
+        "blue"
+      ],
+      "jacket": [
+        "khaki",
+        "brown",
+        "navy blue"
+      ],
+      "coat": [
+        "khaki",
+        "brown",
+        "navy blue"
+      ],
+      "shirt": [
+        "dark blue",
+        "khaki"
+      ],
+      "sweater": [
+        "khaki",
+        "dark blue"
+      ],
+      "hoodie": [
+        "khaki",
+        "dark blue"
+      ]
+    },
+    "red": {
+      "shoes": [
+        "black",
+        "dark blue"
+      ],
+      "jacket": [
+        "dark blue",
+        "black"
+      ],
+      "coat": [
+        "dark blue",
+        "black"
+      ],
+      "shirt": [
+        "khaki",
+        "dark blue",
+        "black"
+      ],
+      "sweater": [
+        "khaki",
+        "black",
+        "gray"
+      ],
+      "hoodie": [
+        "khaki",
+        "dark blue",
+        "black"
+      ]
+    },
+    "navy": {
+      "shoes": [
+        "white",
+        "blue"
+      ],
+      "jacket": [
+        "black",
+        "khaki"
+      ],
+      "coat": [
+        "black",
+        "khaki"
+      ],
+      "shirt": [
+        "black",
+        "white"
+      ],
+      "sweater": [
+        "black",
+        "white"
+      ],
+      "hoodie": [
+        "black",
+        "white"
+      ]
+    },
+    "orange": {
+      "shoes": [
+        "dark blue"
+      ],
+      "jacket": [
+        "dark blue",
+        "black"
+      ],
+      "coat": [
+        "dark blue",
+        "black"
+      ],
+      "shirt": [
+        "white",
+        "blue"
+      ],
+      "sweater": [
+        "white",
+        "blue"
+      ],
+      "hoodie": [
+        "white",
+        "blue"
+      ]
+    },
+    "yellow": {
+      "shoes": [
+        "blue"
+      ],
+      "jacket": [
+        "blue",
+        "white"
+      ],
+      "coat": [
+        "black",
+        "white"
+      ],
+      "shirt": [
+        "dark blue"
+      ],
+      "sweater": [
+        "dark blue"
+      ],
+      "hoodie": [
+        "dark blue"
+      ]
+    },
+    "black": {
+      "shoes": [
+        "white"
+      ],
+      "jacket": [
+        "dark blue",
+        "black"
+      ],
+      "coat": [
+        "black"
+      ],
+      "shirt": [
+        "dark blue"
+      ],
+      "sweater": [
+        "black",
+        "dark blue"
+      ],
+      "hoodie": [
+        "black",
+        "dark blue"
+      ]
+    },
+    "gray": {
+      "shoes": [
+        "black"
+      ],
+      "jacket": [
+        "black"
+      ],
+      "coat": [
+        "black",
+        "dark blue"
+      ],
+      "shirt": [
+        "dark blue"
+      ],
+      "sweater": [
+        "dark blue",
+        "black"
+      ],
+      "hoodie": [
+        "dark blue",
+        "black"
+      ]
+    },
+    "purple": {
+      "shoes": [
+        "dark blue"
+      ],
+      "jacket": [
+        "dark blue",
+        "black"
+      ],
+      "coat": [
+        "black"
+      ],
+      "shirt": [
+        "black"
+      ],
+      "sweater": [
+        "dark blue",
+        "black"
+      ],
+      "hoodie": [
+        "dark blue",
+        "black"
+      ]
+    },
+    "white": {
+      "shoes": [
+        "black",
+        "dark blue"
+      ],
+      "jacket": [
+        "dark blue",
+        "black"
+      ],
+      "coat": [
+        "dark blue",
+        "black"
+      ],
+      "shirt": [
+        "dark blue",
+        "black"
+      ],
+      "sweater": [
+        "black",
+        "dark blue"
+      ],
+      "hoodie": [
+        "black",
+        "dark blue"
+      ]
+    },
+    "brown": {
+      "shoes": [
+        "dark blue"
+      ],
+      "jacket": [
+        "dark blue",
+        "black"
+      ],
+      "coat": [
+        "dark blue",
+        "black"
+      ],
+      "shirt": [
+        "dark blue"
+      ],
+      "sweater": [
+        "dark blue"
+      ],
+      "hoodie": [
+        "dark blue"
+      ]
+    },
+    "pink": {
+      "shoes": [
+        "dark blue"
+      ],
+      "jacket": [
+        "black",
+        "dark blue"
+      ],
+      "coat": [
+        "black"
+      ],
+      "shirt": [
+        "khaki",
+        "blue"
+      ],
+      "sweater": [
+        "dark blue"
+      ],
+      "hoodie": [
+        "dark blue"
+      ]
+    }
+  },
+  "jacket": {
+    "blue": {
+      "pants": [
+        "navy blue",
+        "brown"
+      ],
+      "jeans": [
+        "white",
+        "brown"
+      ],
+      "shoes": [
+        "white"
+      ],
+      "shirt": [
+        "navy blue"
+      ],
+      "sweater": [
+        "brown",
+        "black"
+      ],
+      "hoodie": [
+        "navy blue",
+        "brown"
+      ]
+    },
+    "green": {
+      "pants": [
+        "black"
+      ],
+      "shoes": [
+        "black"
+      ],
+      "shirt": [
+        "black",
+        "white"
+      ],
+      "sweater": [
+        "black"
+      ],
+      "hoodie": [
+        "black"
+      ]
+    },
+    "red": {
+      "pants": [
+        "black",
+        "gray"
+      ],
+      "jeans": [
+        "black",
+        "gray"
+      ],
+      "shoes": [
+        "black",
+        "olive green"
+      ],
+      "shirt": [
+        "black"
+      ],
+      "sweater": [
+        "olive green",
+        "black"
+      ],
+      "hoodie": [
+        "olive green",
+        "black"
+      ]
+    },
+    "navy": {
+      "pants": [
+        "white",
+        "gray"
+      ],
+      "jeans": [
+        "white",
+        "gray"
+      ],
+      "shoes": [
+        "olive green",
+        "dark blue"
+      ],
+      "shirt": [
+        "olive green",
+        "brown"
+      ],
+      "sweater": [
+        "black",
+        "navy blue"
+      ],
+      "hoodie": [
+        "black",
+        "navy blue"
+      ]
+    },
+    "orange": {
+      "pants": [
+        "black",
+        "gray"
+      ],
+      "jeans": [
+        "black",
+        "gray"
+      ],
+      "shoes": [
+        "dark blue",
+        "black"
+      ],
+      "shirt": [
+        "navy blue",
+        "white"
+      ],
+      "sweater": [
+        "black",
+        "navy blue"
+      ],
+      "hoodie": [
+        "black",
+        "navy blue"
+      ]
+    },
+    "yellow": {
+      "pants": [
+        "navy blue"
+      ],
+      "jeans": [
+        "navy blue"
+      ],
+      "shoes": [
+        "navy blue",
+        "black"
+      ],
+      "shirt": [
+        "navy blue",
+        "brown"
+      ],
+      "sweater": [
+        "navy blue",
+        "brown"
+      ],
+      "hoodie": [
+        "navy blue",
+        "brown"
+      ]
+    },
+    "black": {
+      "pants": [
+        "black",
+        "white"
+      ],
+      "jeans": [
+        "black",
+        "white"
+      ],
+      "shoes": [
+        "black",
+        "navy blue"
+      ],
+      "shirt": [
+        "white",
+        "black",
+        "gray"
+      ],
+      "sweater": [
+        "white",
+        "black",
+        "red"
+      ],
+      "hoodie": [
+        "white",
+        "black",
+        "red"
+      ]
+    },
+    "gray": {
+      "pants": [
+        "black",
+        "navy blue"
+      ],
+      "jeans": [
+        "black",
+        "navy blue"
+      ],
+      "shoes": [
+        "black",
+        "olive green"
+      ],
+      "shirt": [
+        "black",
+        "olive green"
+      ],
+      "sweater": [
+        "navy blue"
+      ],
+      "hoodie": [
+        "navy blue"
+      ]
+    },
+    "purple": {
+      "pants": [
+        "gray"
+      ],
+      "jeans": [
+        "gray"
+      ],
+      "shoes": [
+        "gray"
+      ],
+      "shirt": [
+        "black"
+      ],
+      "sweater": [
+        "black",
+        "gray"
+      ],
+      "hoodie": [
+        "black",
+        "gray"
+      ]
+    },
+    "white": {
+      "pants": [
+        "black",
+        "light blue"
+      ],
+      "jeans": [
+        "black",
+        "light blue"
+      ],
+      "shoes": [
+        "black",
+        "khaki",
+        "white"
+      ],
+      "shirt": [
+        "black",
+        "navy blue"
+      ],
+      "sweater": [
+        "light blue",
+        "black",
+        "khaki"
+      ],
+      "hoodie": [
+        "light blue",
+        "black",
+        "khaki"
+      ]
+    },
+    "brown": {
+      "pants": [
+        "olive green",
+        "navy blue"
+      ],
+      "jeans": [
+        "olive green",
+        "navy blue"
+      ],
+      "shoes": [
+        "navy blue",
+        "brown"
+      ],
+      "shirt": [
+        "navy blue",
+        "black"
+      ],
+      "sweater": [
+        "navy blue",
+        "black"
+      ],
+      "hoodie": [
+        "navy blue",
+        "black"
+      ]
+    },
+    "pink": {
+      "pants": [
+        "gray",
+        "navy blue"
+      ],
+      "jeans": [
+        "gray",
+        "navy blue"
+      ],
+      "shoes": [
+        "white",
+        "black"
+      ],
+      "shirt": [
+        "gray",
+        "light blue"
+      ],
+      "sweater": [
+        "light blue",
+        "brown"
+      ],
+      "hoodie": [
+        "light blue",
+        "brown"
+      ]
+    }
+  },
+  "coat": {
+    "blue": {
+      "pants": [
+        "navy blue",
+        "brown"
+      ],
+      "jeans": [
+        "white",
+        "brown"
+      ],
+      "shoes": [
+        "white"
+      ],
+      "shirt": [
+        "navy blue"
+      ],
+      "sweater": [
+        "brown",
+        "black"
+      ],
+      "hoodie": [
+        "navy blue",
+        "brown"
+      ]
+    },
+    "green": {
+      "pants": [
+        "black"
+      ],
+      "shoes": [
+        "black"
+      ],
+      "shirt": [
+        "black",
+        "white"
+      ],
+      "sweater": [
+        "black"
+      ],
+      "hoodie": [
+        "black"
+      ]
+    },
+    "red": {
+      "pants": [
+        "black",
+        "gray"
+      ],
+      "jeans": [
+        "black",
+        "gray"
+      ],
+      "shoes": [
+        "black",
+        "olive green"
+      ],
+      "shirt": [
+        "black"
+      ],
+      "sweater": [
+        "olive green",
+        "black"
+      ],
+      "hoodie": [
+        "olive green",
+        "black"
+      ]
+    },
+    "navy": {
+      "pants": [
+        "white",
+        "gray"
+      ],
+      "jeans": [
+        "white",
+        "gray"
+      ],
+      "shoes": [
+        "olive green",
+        "dark blue"
+      ],
+      "shirt": [
+        "olive green",
+        "brown"
+      ],
+      "sweater": [
+        "black",
+        "navy blue"
+      ],
+      "hoodie": [
+        "black",
+        "navy blue"
+      ]
+    },
+    "orange": {
+      "pants": [
+        "black",
+        "gray"
+      ],
+      "jeans": [
+        "black",
+        "gray"
+      ],
+      "shoes": [
+        "dark blue",
+        "black"
+      ],
+      "shirt": [
+        "navy blue",
+        "white"
+      ],
+      "sweater": [
+        "black",
+        "navy blue"
+      ],
+      "hoodie": [
+        "black",
+        "navy blue"
+      ]
+    },
+    "yellow": {
+      "pants": [
+        "navy blue"
+      ],
+      "jeans": [
+        "navy blue"
+      ],
+      "shoes": [
+        "navy blue",
+        "black"
+      ],
+      "shirt": [
+        "navy blue",
+        "brown"
+      ],
+      "sweater": [
+        "navy blue",
+        "brown"
+      ],
+      "hoodie": [
+        "navy blue",
+        "brown"
+      ]
+    },
+    "black": {
+      "pants": [
+        "black",
+        "white"
+      ],
+      "jeans": [
+        "black",
+        "white"
+      ],
+      "shoes": [
+        "black",
+        "navy blue"
+      ],
+      "shirt": [
+        "white",
+        "black",
+        "gray"
+      ],
+      "sweater": [
+        "white",
+        "black",
+        "red"
+      ],
+      "hoodie": [
+        "white",
+        "black",
+        "red"
+      ]
+    },
+    "gray": {
+      "pants": [
+        "black",
+        "navy blue"
+      ],
+      "jeans": [
+        "black",
+        "navy blue"
+      ],
+      "shoes": [
+        "black",
+        "olive green"
+      ],
+      "shirt": [
+        "black",
+        "olive green"
+      ],
+      "sweater": [
+        "navy blue"
+      ],
+      "hoodie": [
+        "navy blue"
+      ]
+    },
+    "purple": {
+      "pants": [
+        "gray"
+      ],
+      "jeans": [
+        "gray"
+      ],
+      "shoes": [
+        "gray"
+      ],
+      "shirt": [
+        "black"
+      ],
+      "sweater": [
+        "black",
+        "gray"
+      ],
+      "hoodie": [
+        "black",
+        "gray"
+      ]
+    },
+    "white": {
+      "pants": [
+        "black",
+        "light blue"
+      ],
+      "jeans": [
+        "black",
+        "light blue"
+      ],
+      "shoes": [
+        "black",
+        "khaki",
+        "white"
+      ],
+      "shirt": [
+        "black",
+        "navy blue"
+      ],
+      "sweater": [
+        "light blue",
+        "black",
+        "khaki"
+      ],
+      "hoodie": [
+        "light blue",
+        "black",
+        "khaki"
+      ]
+    },
+    "brown": {
+      "pants": [
+        "olive green",
+        "navy blue"
+      ],
+      "jeans": [
+        "olive green",
+        "navy blue"
+      ],
+      "shoes": [
+        "navy blue",
+        "brown"
+      ],
+      "shirt": [
+        "navy blue",
+        "black"
+      ],
+      "sweater": [
+        "navy blue",
+        "black"
+      ],
+      "hoodie": [
+        "navy blue",
+        "black"
+      ]
+    },
+    "pink": {
+      "pants": [
+        "gray",
+        "navy blue"
+      ],
+      "jeans": [
+        "gray",
+        "navy blue"
+      ],
+      "shoes": [
+        "white",
+        "black"
+      ],
+      "shirt": [
+        "gray",
+        "light blue"
+      ],
+      "sweater": [
+        "light blue",
+        "brown"
+      ],
+      "hoodie": [
+        "light blue",
+        "brown"
+      ]
+    }
+  },
+  "sweater": {
+    "blue": {
+      "pants": [
+        "white",
+        "gray",
+        "yellow",
+        "light green"
+      ],
+      "shoes": [
+        "light blue",
+        "white"
+      ],
+      "jeans": [
+        "white",
+        "gray",
+        "olive green",
+        "black",
+        "brown"
+      ],
+      "jacket": [
+        "light blue",
+        "navy blue",
+        "white",
+        "gray",
+        "dark green"
+      ],
+      "coat": [
+        "light blue",
+        "navy blue",
+        "white",
+        "gray",
+        "dark green"
+      ]
+    },
+    "green": {
+      "pants": [
+        "white",
+        "gray",
+        "navy blue"
+      ],
+      "shoes": [
+        "white",
+        "light blue"
+      ],
+      "jacket": [
+        "white",
+        "gray",
+        "light blue"
+      ],
+      "coat": [
+        "white",
+        "gray",
+        "light blue"
+      ]
+    },
+    "red": {
+      "pants": [
+        "gray",
+        "white",
+        "light blue"
+      ],
+      "shoes": [
+        "white",
+        "black",
+        "red"
+      ],
+      "jacket": [
+        "white",
+        "black"
+      ],
+      "coat": [
+        "white",
+        "black"
+      ]
+    },
+    "navy": {
+      "pants": [
+        "gray",
+        "white",
+        "light blue"
+      ],
+      "shoes": [
+        "brown",
+        "white",
+        "black"
+      ],
+      "jacket": [
+        "white",
+        "light blue",
+        "light pink"
+      ],
+      "coat": [
+        "white",
+        "light blue"
+      ]
+    },
+    "orange": {
+      "pants": [
+        "navy blue",
+        "white"
+      ],
+      "shoes": [
+        "light blue",
+        "white",
+        "brown"
+      ],
+      "jacket": [
+        "white"
+      ],
+      "coat": [
+        "navy blue",
+        "white"
+      ]
+    },
+    "yellow": {
+      "pants": [
+        "gray",
+        "white",
+        "light blue"
+      ],
+      "shoes": [
+        "white",
+        "light blue"
+      ],
+      "jacket": [
+        "white"
+      ],
+      "coat": [
+        "white"
+      ]
+    },
+    "black": {
+      "pants": [
+        "white",
+        "blue"
+      ],
+      "shoes": [
+        "white",
+        "red",
+        "green"
+      ],
+      "jacket": [
+        "white",
+        "blue",
+        "gray"
+      ],
+      "coat": [
+        "white",
+        "black"
+      ],
+      "jeans": [
+        "olive green",
+        "white",
+        "blue"
+      ]
+    },
+    "gray": {
+      "pants": [
+        "navy blue",
+        "white",
+        "light blue",
+        "light pink"
+      ],
+      "jeans": [
+        "navy blue",
+        "white",
+        "light blue",
+        "light pink"
+      ],
+      "shoes": [
+        "white",
+        "gray",
+        "blue"
+      ],
+      "jacket": [
+        "white",
+        "light blue"
+      ],
+      "coat": [
+        "white",
+        "black",
+        "navy blue"
+      ]
+    },
+    "purple": {
+      "pants": [
+        "white",
+        "navy blue"
+      ],
+      "jeans": [
+        "white",
+        "navy blue"
+      ],
+      "shoes": [
+        "white"
+      ],
+      "jacket": [
+        "white",
+        "navy blue"
+      ],
+      "coat": [
+        "navy blue",
+        "white"
+      ]
+    },
+    "white": {
+      "pants": [
+        "blue",
+        "gray",
+        "pink"
+      ],
+      "jeans": [
+        "blue",
+        "gray",
+        "pink"
+      ],
+      "shoes": [
+        "black",
+        "white"
+      ],
+      "jacket": [
+        "black",
+        "blue"
+      ],
+      "coat": [
+        "black",
+        "blue"
+      ]
+    },
+    "brown": {
+      "pants": [
+        "navy blue",
+        "white"
+      ],
+      "jeans": [
+        "navy blue",
+        "white"
+      ],
+      "shoes": [
+        "navy blue",
+        "white"
+      ],
+      "jacket": [
+        "white",
+        "gray",
+        "navy blue"
+      ],
+      "coat": [
+        "white",
+        "gray",
+        "navy blue"
+      ]
+    },
+    "pink": {
+      "pants": [
+        "light blue",
+        "white"
+      ],
+      "shoes": [
+        "white",
+        "white"
+      ],
+      "jacket": [
+        "white",
+        "light blue"
+      ],
+      "coat": [
+        "white",
+        "light blue"
+      ]
+    }
+  },
+  "hoodie": {
+    "blue": {
+      "pants": [
+        "white",
+        "gray",
+        "yellow",
+        "light green"
+      ],
+      "shoes": [
+        "light blue",
+        "white"
+      ],
+      "jeans": [
+        "white",
+        "gray",
+        "olive green",
+        "black",
+        "brown"
+      ],
+      "jacket": [
+        "light blue",
+        "navy blue",
+        "white",
+        "gray",
+        "dark green"
+      ],
+      "coat": [
+        "light blue",
+        "navy blue",
+        "white",
+        "gray",
+        "dark green"
+      ]
+    },
+    "green": {
+      "pants": [
+        "white",
+        "gray",
+        "navy blue"
+      ],
+      "shoes": [
+        "white",
+        "light blue"
+      ],
+      "jacket": [
+        "white",
+        "gray",
+        "light blue"
+      ],
+      "coat": [
+        "white",
+        "gray",
+        "light blue"
+      ]
+    },
+    "red": {
+      "pants": [
+        "gray",
+        "white",
+        "light blue"
+      ],
+      "shoes": [
+        "white",
+        "black",
+        "red"
+      ],
+      "jacket": [
+        "white",
+        "black"
+      ],
+      "coat": [
+        "white",
+        "black"
+      ]
+    },
+    "navy": {
+      "pants": [
+        "gray",
+        "white",
+        "light blue"
+      ],
+      "shoes": [
+        "brown",
+        "white",
+        "black"
+      ],
+      "jacket": [
+        "white",
+        "light blue",
+        "light pink"
+      ],
+      "coat": [
+        "white",
+        "light blue"
+      ]
+    },
+    "orange": {
+      "pants": [
+        "navy blue",
+        "white"
+      ],
+      "shoes": [
+        "light blue",
+        "white",
+        "brown"
+      ],
+      "jacket": [
+        "white"
+      ],
+      "coat": [
+        "navy blue",
+        "white"
+      ]
+    },
+    "yellow": {
+      "pants": [
+        "gray",
+        "white",
+        "light blue"
+      ],
+      "shoes": [
+        "white",
+        "light blue"
+      ],
+      "jacket": [
+        "white"
+      ],
+      "coat": [
+        "white"
+      ]
+    },
+    "black": {
+      "pants": [
+        "white",
+        "blue"
+      ],
+      "shoes": [
+        "white",
+        "red",
+        "green"
+      ],
+      "jacket": [
+        "white",
+        "blue",
+        "gray"
+      ],
+      "coat": [
+        "white",
+        "black"
+      ],
+      "jeans": [
+        "olive green",
+        "white",
+        "blue"
+      ]
+    },
+    "gray": {
+      "pants": [
+        "navy blue",
+        "white",
+        "light blue",
+        "light pink"
+      ],
+      "jeans": [
+        "navy blue",
+        "white",
+        "light blue",
+        "light pink"
+      ],
+      "shoes": [
+        "white",
+        "gray",
+        "blue"
+      ],
+      "jacket": [
+        "white",
+        "light blue"
+      ],
+      "coat": [
+        "white",
+        "black",
+        "navy blue"
+      ]
+    },
+    "purple": {
+      "pants": [
+        "white",
+        "navy blue"
+      ],
+      "jeans": [
+        "white",
+        "navy blue"
+      ],
+      "shoes": [
+        "white"
+      ],
+      "jacket": [
+        "white",
+        "navy blue"
+      ],
+      "coat": [
+        "navy blue",
+        "white"
+      ]
+    },
+    "white": {
+      "pants": [
+        "blue",
+        "gray",
+        "pink"
+      ],
+      "jeans": [
+        "blue",
+        "gray",
+        "pink"
+      ],
+      "shoes": [
+        "black",
+        "white"
+      ],
+      "jacket": [
+        "black",
+        "blue"
+      ],
+      "coat": [
+        "black",
+        "blue"
+      ]
+    },
+    "brown": {
+      "pants": [
+        "navy blue",
+        "white"
+      ],
+      "jeans": [
+        "navy blue",
+        "white"
+      ],
+      "shoes": [
+        "navy blue",
+        "white"
+      ],
+      "jacket": [
+        "white",
+        "gray",
+        "navy blue"
+      ],
+      "coat": [
+        "white",
+        "gray",
+        "navy blue"
+      ]
+    },
+    "pink": {
+      "pants": [
+        "light blue",
+        "white"
+      ],
+      "shoes": [
+        "white",
+        "white"
+      ],
+      "jacket": [
+        "white",
+        "light blue"
+      ],
+      "coat": [
+        "white",
+        "light blue"
+      ]
     }
   }
 }
