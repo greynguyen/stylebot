@@ -113,9 +113,9 @@ function getQuestionIntent(intent, session, callback) {
       const colorGiven = colorGivenSlot.value;
       const clothesGiven = clothesGivenSlot.value;
       const clothes2Given = clothes2GivenSlot.value;
+      var parsingJSON = events;
 
       try {
-        var parsingJSON = events;
         let colorMatched = parsingJSON[clothesGiven][colorGiven][clothes2Given][0];
 
         if (clothesGiven === 'jeans' | clothesGiven === 'shoes' | clothesGiven === 'pants') {
@@ -135,7 +135,7 @@ function getQuestionIntent(intent, session, callback) {
 }
 
 function getJSON(eventCallback) {
-    var url = `https://api.myjson.com/bins/9ajax`;
+    var url = `https://api.myjson.com/bins/nscvh`;
 
     https.get(url, function(res) {
         var body = '';
