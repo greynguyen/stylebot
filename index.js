@@ -1,15 +1,5 @@
 'use strict';
 
-/**
-* This sample demonstrates a simple skill built with the Amazon Alexa Skills Kit.
-* The Intent Schema, Custom Slots, and Sample Utterances for this skill, as well as
-* testing instructions are located at http://amzn.to/1LzFrj6
-*
-* For additional samples, visit the Alexa Skills Kit Getting Started guide at
-* http://amzn.to/1LGWsLG
-*/
-
-
 // --------------- HTTP -----------------------
 
 var https = require('https');
@@ -24,8 +14,8 @@ function buildSpeechletResponse(title, output, repromptText, shouldEndSession) {
     },
     card: {
       type: 'Simple',
-      title: `SessionSpeechlet - ${title}`,
-      content: `SessionSpeechlet - ${output}`,
+      title: `${title}`,
+      content: `${output}`,
     },
     reprompt: {
       outputSpeech: {
@@ -48,7 +38,7 @@ function buildResponse(sessionAttributes, speechletResponse) {
 function buildSSMLResponses(title, output, repromptText, shouldEndSession) {
   return {
     outputSpeech: {
-      type: 'SSML',
+      type: 'text',
       ssml: output
     },
     card: {
@@ -71,9 +61,9 @@ function buildSSMLResponses(title, output, repromptText, shouldEndSession) {
 function getWelcomeResponse(callback) {
   // If we wanted to initialize the session to have some attributes we could add those here.
   const sessionAttributes = {};
-  const cardTitle = 'Welcome';
-  const speechOutput = 'Welcome to lookbot. You can ask me which colors pair well together for an out fit. ' +
-   'For example, ask what color shirt goes well with blue jeans';
+  const cardTitle = 'Welcome to ColorBot';
+  const speechOutput = 'Welcome to Color Bot. You can ask me which colors pair well together for an outfit. ' +
+   'For example, ask what color jacket goes well with blue pants';
 
   // If the user either does not reply to the welcome message or says something that is not
   // understood, they will be prompted again with this text.
@@ -86,8 +76,8 @@ function getWelcomeResponse(callback) {
   }
 
 function handleSessionEndRequest(callback) {
-    const cardTitle = 'Session Ended';
-    const speechOutput = 'Hope to see you soon! Goodbye!';
+    const cardTitle = 'Quit ColorBot';
+    const speechOutput = 'Goodbye!';
     // Setting this to true ends the session and exits the skill.
     const shouldEndSession = true;
 
@@ -101,14 +91,15 @@ function getQuestionIntent(intent, session, callback) {
     const colorGivenSlot = intent.slots.Color;
     const clothesGivenSlot = intent.slots.Clothes;
     const clothes2GivenSlot = intent.slots.Clothes_two;
-    const cardTitle = intent.name;
-    let sessionAttributes = {};
-    const shouldEndSession = true;
+    const cardTitle = 'Match Clothing Items';
+    let shouldEndSession = true;
     let speechOutput = '';
-    const repromptText = '';
+    let repromptText = '';
 
-    // check if color actually exists
-    // try {
+    let sessionAttributes = {
+      "count" : 1
+    };
+
     getJSON(function (events) {
       const colorGiven = colorGivenSlot.value;
       const clothesGiven = clothesGivenSlot.value;
@@ -127,9 +118,22 @@ function getQuestionIntent(intent, session, callback) {
         callback(sessionAttributes,
           buildSpeechletResponse(cardTitle, speechOutput, repromptText, shouldEndSession));
       } catch (err) {
-        speechOutput = `Sorry, I currently do not know that color and clothing item combination. Please try another one`;
-        callback(sessionAttributes,
-          buildSpeechletResponse(cardTitle, speechOutput, repromptText, shouldEndSession));
+
+        try {
+          if (session.attributes.count == 1) {
+            speechOutput = `Sorry, I currently do not know that color and clothing item combination. Please try another one.`;
+
+            callback(sessionAttributes,
+              buildSpeechletResponse(cardTitle, speechOutput, repromptText, shouldEndSession));
+          }
+        } catch (err) {
+          shouldEndSession = false;
+          repromptText = `I couldn't hear you. Can you repeat that?`;
+          speechOutput = `I couldn't hear you. Can you repeat that?`;
+
+          callback(sessionAttributes,
+            buildSpeechletResponse(cardTitle, speechOutput, repromptText, shouldEndSession));
+        }
       }
     });
 }
