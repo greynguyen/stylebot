@@ -84,9 +84,6 @@ function handleSessionEndRequest(callback) {
     callback({}, buildSpeechletResponse(cardTitle, speechOutput, null, shouldEndSession));
   }
 
-  /**
-  * Sets the color in the session and prepares the speech to reply to the user.
-  */
 function getQuestionIntent(intent, session, callback) {
     const colorGivenSlot = intent.slots.Color;
     const clothesGivenSlot = intent.slots.Clothes;
@@ -110,9 +107,9 @@ function getQuestionIntent(intent, session, callback) {
         let colorMatched = parsingJSON[clothesGiven][colorGiven][clothes2Given][0];
 
         if (clothesGiven === 'jeans' | clothesGiven === 'shoes' | clothesGiven === 'pants') {
-          speechOutput = `A pair of ${colorMatched} ${clothesGiven} goes best with ${colorGiven} ${clothes2Given}`;
+          speechOutput = `A pair of ${colorMatched} ${clothesGiven} goes best with ${colorGiven} ${clothes2Given}.`;
         } else {
-          speechOutput = `A ${colorMatched} ${clothesGiven} goes best with ${colorGiven} ${clothes2Given}`;
+          speechOutput = `A ${colorMatched} ${clothesGiven} goes best with ${colorGiven} ${clothes2Given}.`;
         }
 
         callback(sessionAttributes,
@@ -136,6 +133,21 @@ function getQuestionIntent(intent, session, callback) {
         }
       }
     });
+}
+
+function getHelpIntent (intent, session, callback) {
+  const cardTitle = 'ColorBot Help';
+  let shouldEndSession = false;
+  let speechOutput = '';
+  let repromptText = '';
+  let sessionAttributes = {};
+
+  speechOutput = `You can ask me the following colors: green, red, blue, navy, orange, yellow, black,
+                  gray, purple, white, brown, pink. ` + `And also the following clothing items:
+                  jeans, shirt, jacket, coat, shoes, sweater, hoodie, pants. `;
+
+  callback(sessionAttributes,
+    buildSpeechletResponse(cardTitle, speechOutput, repromptText, shouldEndSession));
 }
 
 function getJSON(eventCallback) {
@@ -187,8 +199,8 @@ function onIntent(intentRequest, session, callback) {
   // Dispatch to your skill's intent handlers
   if (intentName === 'WhatColorMatch') {
     getQuestionIntent(intent, session, callback);
-  } else if (intentName === 'EndColorIntent') {
-    handleSessionEndRequest(callback);
+  } else if (intentName === 'ColorBotHelp') {
+    getHelpIntent(intent, session, callback);
   } else if (intentName === 'AMAZON.HelpIntent') {
     getWelcomeResponse(callback);
   } else if (intentName === 'AMAZON.StopIntent' || intentName === 'AMAZON.CancelIntent') {
